@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "938422507279",
+    "firebase_url": "https://messengerek-b2a97.firebaseio.com",
+    "project_id": "messengerek-b2a97",
+    "storage_bucket": "messengerek-b2a97.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:938422507279:android:19af0c5a9cd2eee341907a",
+        "android_client_info": {
+          "package_name": "com.example.messengerek"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "938422507279-pq2dfo0tanno30sl69nnpb2nu41d5agn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.messengerek",
+            "certificate_hash": "ed1292aeac7b6e31c6cb94d8326d61410f238d76"
+          }
+        },
+        {
+          "client_id": "938422507279-7kdjcgk1fspk7vudeqrhsne6adv84k1l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKRAw9ZoZkjm8LMWwBmWsyi7RaM3md1ps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "938422507279-7kdjcgk1fspk7vudeqrhsne6adv84k1l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

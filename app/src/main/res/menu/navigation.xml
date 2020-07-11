@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_all"
+        android:icon="@android:drawable/star_on"
+        android:title="Wszystko" />
+
+
+    <item
+        android:id="@+id/navigation_relacje"
+        android:icon="@android:drawable/presence_video_away"
+        android:title="Relacje" />
+
+
+    <item
+        android:id="@+id/navigation_memy"
+        android:icon="@android:drawable/ic_menu_gallery"
+        android:title="Memy" />
+
+    <item
+        android:id="@+id/navigation_god"
+        android:icon="@drawable/common_google_signin_btn_icon_dark"
+        android:title="Piłka nożna" />
+
+    <item
+        android:id="@+id/navigation_profil"
+        android:icon="@drawable/fui_ic_anonymous_white_24dp"
+        android:title="Mój Profil"/>
+
+</menu>

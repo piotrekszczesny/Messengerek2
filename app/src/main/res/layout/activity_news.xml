@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F5F5F5">
+
+        <ImageView
+            android:id="@+id/imageView_image_news"
+            android:layout_width="442dp"
+            android:layout_height="235dp"
+            android:layout_marginStart="144dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="139dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.513"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_tytul_news"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/textView_tytul_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="left"
+            android:maxWidth="240dp"
+            android:text="TextView"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView_image_news"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="64dp"
+            android:background="@android:color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_tytul_news" />
+
+        <TextView
+            android:id="@+id/textView__tresc_news"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+
+            android:layout_marginEnd="17dp"
+            android:gravity="left"
+            android:maxWidth="340dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView_image_news" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="7dp"
+            android:background="@android:color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView__tresc_news" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView_comment_news"
+            android:layout_width="406dp"
+            android:layout_height="163dp"
+            android:layout_marginTop="40dp"
+            android:background="#F5F5F5"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView__tresc_news" />
+
+        <EditText
+            android:id="@+id/editText_comment_news"
+            android:layout_width="408dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:ems="10"
+            android:hint="Wpisz Komentarz"
+            android:background="@android:color/white"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerView_comment_news" />
+
+        <Button
+            android:id="@+id/btn_comment_news"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="124dp"
+            android:layout_marginTop="12dp"
+            android:background="#FC288B11"
+            android:text="Dodaj Komentarz"
+            android:textColor="@android:color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_comment_news" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Komentarze"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView__tresc_news" />
+
+        <Button
+            android:id="@+id/button_txtSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="12dp"
+            android:text="Zwiększ tekst"
+            app:layout_constraintEnd_toStartOf="@+id/btn_zmniejszTekst"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_tytul_news" />
+
+        <Button
+            android:id="@+id/btn_zmniejszTekst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="34dp"
+            android:text="Zmniejsz tekst"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/button_txtSize"
+            app:layout_constraintTop_toBottomOf="@+id/textView_tytul_news" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
